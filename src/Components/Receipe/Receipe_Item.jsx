@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import UserContext from "../../Context/SearchContext";
 import { useContext } from "react";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { Link } from "react-router-dom";
+import { FaRegHeart } from "react-icons/fa";
 
 function Receipe_Item() {
   const { id } = useParams();
@@ -85,11 +85,11 @@ function Receipe_Item() {
                 </span>
               </div>
             </div>
-            <div className="mt-4 flex gap-4 justify-center lg:w-40 rounded-lg bg-orange-700 px-4 py-3 text-lg font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
-              <button onClick={()=>handleFavourite(receipeDetail?.recipe)} type="button" className=" ">
+            <div className="mt-4 flex gap-4 justify-center lg:w-40 rounded-lg bg-black px-4 py-3 text-lg font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+              <button onClick={()=>handleFavourite(receipeDetail?.recipe)} type="button" className=" text-xl">
                 Favourite
-              </button>{" "}
-              <FavoriteBorderIcon />
+              </button>
+              <FaRegHeart style={{fontSize:'1.5 rem', margin:'auto', color:"red"}}/>
             </div>
           </div>
         </div>

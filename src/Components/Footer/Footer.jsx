@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
-
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { AiFillLinkedin } from "react-icons/ai";
 
 function Footer() {
     const year = new Date().getFullYear();
@@ -98,16 +96,30 @@ function Footer() {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="https://www.facebook.com/iampriyanshu29" className="text-gray-500 hover:text-orange-700">
-              <FacebookIcon/>
+              <FaFacebook
+              style={{
+                fontSize: '1.5rem', 
+              }}
+              />
             </Link>
             <Link to="https://www.instagram.com/iampriyanshu29" className="text-gray-500 hover:text-orange-700">
-                <InstagramIcon/>
+                <FaInstagram style={{
+                  fontSize: '1.5rem', 
+                }}/>
             </Link>
             <Link to="https://www.linkedin.com/in/iampriyanshu29/" className="text-gray-500 hover:text-orange-700">
-                <LinkedInIcon />
+                <AiFillLinkedin
+                style={{
+                  fontSize: '1.5rem', 
+                }}
+                />
             </Link>
             <Link to="#" className="text-gray-500 hover:text-orange-700">
-             <GitHubIcon/>
+             <FaGithub
+             style={{
+              fontSize: '1.5rem', 
+            }}
+             />
             </Link>
           </div>
         </div>

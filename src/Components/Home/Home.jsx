@@ -1,10 +1,14 @@
 import React from "react";
 import Home_Img from '../Images/home-img.jpg'
 import { Link } from "react-router-dom";
-import PublicIcon from '@mui/icons-material/Public';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
-import FoodBankIcon from '@mui/icons-material/FoodBank';
-import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
+import { FaEarthAsia } from "react-icons/fa6";
+import { FaClipboardList } from "react-icons/fa";
+import { GiCampCookingPot } from "react-icons/gi";
+import { FaMobileAlt } from "react-icons/fa";
+// import PublicIcon from '@mui/icons-material/Public';
+// import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+// import FoodBankIcon from '@mui/icons-material/FoodBank';
+// import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 function Home() {
   return (
     <>
@@ -82,7 +86,11 @@ function Home() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <PublicIcon/>
+                <FaEarthAsia
+                style={{
+                  fontSize: '1.5rem', 
+                }}
+                />
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
@@ -100,7 +108,11 @@ function Home() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <ReceiptLongIcon/>
+               <FaClipboardList
+               style={{
+                fontSize: '1.5rem', 
+              }}
+               />
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
@@ -120,7 +132,11 @@ function Home() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <FoodBankIcon/>
+              <GiCampCookingPot
+              style={{
+                fontSize: '1.5rem', 
+              }}
+              />
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">
@@ -140,7 +156,11 @@ function Home() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <MobileFriendlyIcon/>
+              <FaMobileAlt
+              style={{
+                fontSize: '1.5rem', 
+              }}
+              />
               </svg>
             </div>
             <h3 className="mt-8 text-lg font-semibold text-black">

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from '../Card/Card'
 import { useContext } from 'react'
 import SearchContext from '../../Context/SearchContext'
-import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import { GiKnifeFork } from "react-icons/gi";
 
 function Famous() {
   const{search,setSearch,handleSubmit,receipe} = useContext(SearchContext)
@@ -19,8 +19,9 @@ function Famous() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
-            <LocalDiningIcon style={{ color: "#FF9292" }} />
-          </form>
+            </form>
+            <GiKnifeFork style={{ fontSize:'1.3rem' ,color: "#FF9292" }} />
+         
         </div>
       </div>
       <div className='container mx-auto flex flex-wrap justify-center gap-10 py-6'>

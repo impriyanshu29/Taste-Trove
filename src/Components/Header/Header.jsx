@@ -1,8 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, NavLink } from "react-router-dom";
-
-import SearchContext from "../../Context/SearchContext";
-import { useContext } from "react";
 
 function Header() {
   
